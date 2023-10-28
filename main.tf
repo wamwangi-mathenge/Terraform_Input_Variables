@@ -24,7 +24,5 @@ resource "aws_instance" "input_variables" {
   ami = "ami-08bf0e5db5b302e19"
   instance_type = var.my_instance_type
 
-  tags = {
-    Name = "varables_instance"
-  }
+  tags = var.instance_tags
 }
